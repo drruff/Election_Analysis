@@ -32,5 +32,11 @@ The analysis of the election shows that:
 
 
 ## Challenge Overview
+The Colorado Board of ELections employee has given additional tasks for the election udit's analysis.
+
+1. The voter turnout for each county
+2. The percentage of votes from each county out of the total count
+3. The county with the highest turnout
+
 
 ## Challenge Summary
