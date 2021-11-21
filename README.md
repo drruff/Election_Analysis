@@ -62,4 +62,5 @@ The follwoing is two ways the code can be modified to used in different election
 - We change the type of election from say congressional to city:
   - We would simply change the "county" variable names to "district" variable names.
 - We can change the type of voting from single vote to ranked voting (where we vote rank all candidates from most to least prefered to win): 
-  - We would need to create a list that keeps track of the the "least amount of votes" for each round of counting, then add an if statement that only counts the most preffered vote for each person as long as they are not in this list. 
+  - We would need to create a list that keeps track of the the "least amount of votes" for each round of counting, then add an if statement that only counts the most preffered vote for each person as long as they are not in this list.
+  - This is assuming the data is kept similar the data we are presented here, but the most prefered is the lowest numbered column, and thus the if statement just changes row[2] to row[x] where x=2+p, where p=number of preffered votes in the least amount of votes list, thus taking the next most prefered vote.
