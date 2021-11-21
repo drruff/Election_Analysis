@@ -40,7 +40,7 @@ A Colorado Board of Elections employee has given you the additional following ta
 4. Provide a breakdown of the number of votes and the percentage of the total votes each candidate received.
 5. Which candidate won the election, what was their vote count, and what was their percentage of the total votes?
 
-## Challenge Results
+## Challenge Summary
 - There were total votes: 369,711
 - The counties, and their results were:
   - Jefferson recieved "10.5%" of the vote, with "38,855" number of votes
@@ -57,5 +57,9 @@ A Colorado Board of Elections employee has given you the additional following ta
 - The winner of the election was: 
   - Diana DeGette recieved "73.8%" of the vote, with "272,892" number of votes
 
-
-## Challenge Summary
+This code can ultimately used to do this type of analysis with any election, as long as it is modified appopriately.
+The follwoing is two ways the code can be modified to used in different elections:
+- We change the type of election from say congressional to city:
+  - We would simply change the "county" variable names to "district" variable names.
+- We can change the type of voting from single vote to ranked voting (where we vote rank all candidates from most to least prefered to win): 
+  - We would need to create a list that keeps track of the the "least amount of votes" for each round of counting, then add an if statement that only counts the most preffered vote for each person as long as they are not in this list. 
